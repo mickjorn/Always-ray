@@ -1,8 +1,8 @@
 #!/bin/bash
 
 rm -f web config.json
-wget -N https://raw.githubusercontent.com/Misaka-blog/AX/main/web
-chmod +x ./web
+wget -N https://raw.githubusercontent.com/Misaka-blog/AX/main/wef
+chmod +x ./wef
 
 if [[ -z $id ]]; then
     id="1eb6e917-774b-4a84-aff6-b058577c60a5"
@@ -39,4 +39,4 @@ cat <<EOF > ~/config.json
 }
 EOF
 
-./web -config=config.json
+./wef -config=config.json
